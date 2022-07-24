@@ -15,6 +15,7 @@ body{
 	flex-direction: column;
 }
 .box .title h3{
+	color: yellow;
 	margin: 0;
 	padding-bottom: 40px; 
 	font-size: 24px;
