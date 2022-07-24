@@ -1,0 +1,97 @@
+body{
+	background-color: #e9ecf1;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.box{
+	background-color: white;
+	margin: 30px;
+	padding: 50px 50px 0px 50px;
+	display: flex;
+	flex-direction: column;
+}
+.box .title h3{
+	margin: 0;
+	padding-bottom: 40px; 
+	font-size: 24px;
+}
+.box .content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.box .content .user-item{
+	margin-left: 1%;
+	width: 44%;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-left: 5px solid transparent;
+	box-shadow: 0px 0px 10px rgba(202, 202, 202, 0.671);
+	padding: 15px;
+	border-radius: 5px;
+}
+@media (max-width: 992px) {
+	.box .content .user-item{
+		width: 100%;
+		margin-left: 0px;
+		box-shadow: 0px 0px 10px transparent;
+	}
+}
+.box .content .user-item .img-container{
+	width: 65px;
+	height: 65px;
+	border: 1px solid rgba(128, 128, 128, 0.25);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box .content .user-item .img-container img{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.box .content .user-item .info-content{
+	margin-left: 15px;
+	line-height: 34px;
+}
+.box .content .user-item .info-content h4.titre{
+	margin: 0;
+	margin-left: 18px;
+	position: relative;
+}
+.box .content .user-item .info-content h4.titre::before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 10;
+	top: 12px;
+	left: -18px;
+}
+.box .content .user-item .info-content h4.titre.violet::before{
+	background-color: #6c63e2;
+}
+.box .content .user-item .info-content h4.titre.rose::before{
+	background-color: #ff76a7;
+}
+.box .content .user-item .info-content h4.titre.bleu::before{
+	background-color: #92a9ff;
+}
+.box .content .user-item .info-content p{
+	margin: 0;
+	opacity: 0.5;
+}
+.box .footer{
+	margin-top: 25px;
+	width: 60%;
+	height: 8px;
+	background-image: linear-gradient(to right, #6a53e0, #937ce9);
+	align-self: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
